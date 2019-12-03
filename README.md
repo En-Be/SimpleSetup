@@ -108,7 +108,7 @@
     Total tests: 2
         Passed: 2
     Total time: 1.1531 Seconds
-        1>Done Building Project "/mnt/c/Users/Nicholas/Projects/Hello/Hello.csproj" (VSTest target(s)).
+        1>Done Building Project "/mnt/c/Users/You/Projects/NameOfProject/NameOfProject.csproj" (VSTest target(s)).
 
     Build succeeded.
         0 Warning(s)

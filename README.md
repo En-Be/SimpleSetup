@@ -1,6 +1,6 @@
 # Simple Setup
 
-## How to make a simple C# console program
+## How to make a simple test driven C# console program.
 
 ### Installation
 - In a bash terminal, run the following commands:
@@ -61,18 +61,18 @@
         {
             static void Main(string[] args)
             {
-                NameOfProject project = new NameOfProject(args);
+                Greeting greeting = new Greeting(args);
             }
 
         }
 
-        class NameOfProject
+        class Greeting
         {
-            public NameOfProject(string[] args)
+            public Greeting(string[] args)
             {
                 foreach(string arg in args)
                 {
-                    Console.WriteLine($"Hello there {arg}");
+                    Console.WriteLine($"Hello {arg}");
                 }
             }
         }
@@ -117,5 +117,33 @@
     Time Elapsed 00:00:03.01
     ```
     The -v n flag gives us more information on which tests passed and failed.
+
+### Adding version control
+
+- Make it a git project
+
+    ```
+    git init
+    ```
+- Add everything to staging
+
+    ```
+    git add .
+    ```
+- Commit this version
+
+    ```
+    git commit -m "Initial commit"
+    ```
+- Start a new project on github, and set it as the remote:
+
+    ```
+    git remote add origin git@github.com:YourGithubUsername/NameOfProject.git
+    ```
+- Push to the remote repo:
+
+    ```
+    git push -u origin master
+    ```
 
 ## The NameOfProject.cs and NameOfProjectTest.cs files are now ready for TDD.
